@@ -1,0 +1,15 @@
+# Secrets - NEVER push
+.env
+.env.local
+foley-backend/.env
+foley-frontend/.env
+
+# Dependencies & build bloat
+node_modules/
+foley-frontend/node_modules/
+foley-frontend/dist/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
