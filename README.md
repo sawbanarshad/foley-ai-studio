@@ -110,6 +110,10 @@ Users can also seek the waveform, view detected peaks, download the synced MP4, 
 
 ## System Architecture
 
+![Foley AI Studio system architecture](docs/assets/system-architecture.png)
+
+*End-to-end architecture: React upload and studio controls feed FastAPI ingestion, Gemini/OpenCV analysis, real audio retrieval, physical DSP shaping, FFmpeg assembly, and downloadable outputs.*
+
 ```mermaid
 flowchart LR
     A[React + TypeScript UI] -->|multipart upload| B[FastAPI API]
