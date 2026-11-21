@@ -55,6 +55,12 @@ This project does not drop generic stock clips onto a rough timestamp and stop t
 | **Offline event fallback** | When Gemini is unavailable, OpenCV motion heuristics produce a usable offline analysis. |
 | **Editable timeline** | Event type, collider, surface, distance, prompt, room, energy, and frame offset remain controllable after analysis. |
 
+## Feature Positioning
+
+![Illustrative feature comparison for Foley AI Studio](docs/assets/system-comparison.png)
+
+*This graphic is a qualitative product-positioning illustration, not an independently validated benchmark. The timing, latency, and competitor-specific comparisons shown have not been measured by this project and should not be interpreted as verified results.*
+
 ## Product Walkthrough
 
 ![Foley AI Studio user workflow](docs/assets/user-workflow.svg)
