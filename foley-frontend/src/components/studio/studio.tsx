@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useStudio } from '../../hooks/useStudio';
+import { useStudio } from '../config/hooks/useStudio';
 import { PipelineStepper } from './PipelineStepper';
 import { UploadCard } from './UploadCard';
 import { PhysicsCard } from './PhysicsCard';
@@ -7,8 +7,8 @@ import { EventsCard } from './EventsCard';
 import { StageCard } from './StageCard';
 import { CustomSoundLayerCard } from './CustomSoundLayerCard';
 import { LiveStatusLog } from './LiveStatusLog';
-import { RoomName } from '../../api/types';
-import { SoundLayer } from '../../api/client';
+import { RoomName } from '../../types';
+import { SoundLayer } from '../../client';
 
 export const Studio: React.FC = () => {
     const {

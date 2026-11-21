@@ -1,5 +1,5 @@
 import React from 'react';
-import { PlaybackMode } from '../../hooks/useStudio';
+import { PlaybackMode } from '../config/hooks/useStudio';
 
 export interface ModeToggleProps {
     mode: PlaybackMode;

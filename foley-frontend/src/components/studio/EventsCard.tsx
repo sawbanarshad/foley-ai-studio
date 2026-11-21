@@ -1,9 +1,9 @@
 import React from 'react';
-import { FoleyEvent, AnalyzeResponse, TweakResponse } from '../../api/types';
+import { FoleyEvent, AnalyzeResponse, TweakResponse } from '../../types';
 import { EventRow } from './EventRow';
 import { Button } from '../ui/Button';
 import { Badge } from '../ui/Badge';
-import { StudioPhase } from '../../hooks/useStudio';
+import { StudioPhase } from '../config/hooks/useStudio';
 
 export interface EventsCardProps {
     events: FoleyEvent[];

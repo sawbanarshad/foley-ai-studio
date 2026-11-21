@@ -7,10 +7,10 @@ import {
     AnalyzeResponse,
     GenerateResponse,
     TweakResponse
-} from '../../api/types';
-import { PlaybackMode } from '../../hooks/useStudio';
-import { resolveUrl } from '../../api/client';
-import { useVideoClock } from '../../hooks/useVideoClock';
+} from '../../types';
+import { PlaybackMode } from '../config/hooks/useStudio';
+import { resolveUrl } from '../../client';
+import { useVideoClock } from '../config/hooks/useVideoClock';
 import { downloadFile } from '../../lib/download';
 
 export interface StageCardProps {

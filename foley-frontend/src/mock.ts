@@ -9,7 +9,7 @@ import {
     WallMaterial
 } from './types';
 import { EventEditPayload, TweakPhysicsPayload } from './client';
-import { computeLocalRT60 } from '../lib/rooms';
+import { computeLocalRT60 } from './lib/rooms';
 
 let _mockObjectUrl: string = '';
 let _mockFps = 30;

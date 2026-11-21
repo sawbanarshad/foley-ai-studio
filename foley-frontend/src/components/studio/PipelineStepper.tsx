@@ -1,5 +1,5 @@
 import React from 'react';
-import { StudioPhase } from '../../hooks/useStudio';
+import { StudioPhase } from '../config/hooks/useStudio';
 
 export interface PipelineStepperProps {
     phase: StudioPhase;

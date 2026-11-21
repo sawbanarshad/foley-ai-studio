@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FoleyEvent, Collider, Surface, Distance } from '../../api/types';
+import { FoleyEvent, Collider, Surface, Distance } from '../../types';
 import { Select } from '../ui/Select';
 import { Segmented } from '../ui/Segmented';
 import { Badge } from '../ui/Badge';

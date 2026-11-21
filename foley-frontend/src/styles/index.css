@@ -1,0 +1,126 @@
+@import "@fontsource/anton";
+@import "@fontsource-variable/archivo";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --color-bg: #07080D;
+  --color-text: #FFFFFF;
+  --color-accent: #9947B7;
+  --color-card-border: rgba(255, 255, 255, 0.1);
+  --color-button-bg: #FFFFFF;
+  --color-button-text: #000000;
+  --color-button-border: #000000;
+  --color-text-muted: rgba(255, 255, 255, 0.7);
+
+  --type-display: clamp(3.5rem, 11vw, 12rem);
+  --type-page-title: clamp(2.5rem, 6vw, 5rem);
+  --type-section: clamp(2rem, 4.5vw, 3.5rem);
+  --type-subhead: clamp(1.4rem, 2.8vw, 2.2rem);
+  --type-body: 1.2rem;
+
+  --room-bg: radial-gradient(ellipse 90% 60% at 50% -10%, rgba(153, 71, 183, 0.28), transparent 70%), linear-gradient(180deg, #100C1F 0%, #08090E 100%);
+  --room-accent: #C77DFF;
+  --room-accent-secondary: #E997F4;
+  --room-text: #FFFFFF;
+  --room-glow: rgba(153, 71, 183, 0.35);
+  --room-border: rgba(153, 71, 183, 0.35);
+}
+
+[data-room-theme="small_room"] {
+  --room-bg: radial-gradient(ellipse 90% 60% at 50% -10%, rgba(255, 85, 152, 0.4), transparent 75%), linear-gradient(180deg, #1C0717 0%, #0A060C 100%);
+  --room-accent: #FF5598;
+  --room-accent-secondary: #FDA1C5;
+  --room-text: #FFFFFF;
+  --room-glow: rgba(255, 85, 152, 0.4);
+  --room-border: rgba(255, 85, 152, 0.45);
+}
+
+[data-room-theme="large_hall"] {
+  --room-bg: radial-gradient(ellipse 90% 60% at 50% -10%, rgba(153, 71, 183, 0.45), transparent 75%), linear-gradient(180deg, #130826 0%, #080512 100%);
+  --room-accent: #9947B7;
+  --room-accent-secondary: #E997F4;
+  --room-text: #FFFFFF;
+  --room-glow: rgba(153, 71, 183, 0.4);
+  --room-border: rgba(153, 71, 183, 0.45);
+}
+
+[data-room-theme="cave"] {
+  --room-bg: radial-gradient(ellipse 90% 60% at 50% -10%, rgba(254, 41, 2, 0.38), transparent 75%), linear-gradient(180deg, #200705 0%, #0A0403 100%);
+  --room-accent: #FE2902;
+  --room-accent-secondary: #FF8F5F;
+  --room-text: #FFFFFF;
+  --room-glow: rgba(254, 41, 2, 0.4);
+  --room-border: rgba(254, 41, 2, 0.45);
+}
+
+[data-room-theme="open_field"] {
+  --room-bg: radial-gradient(ellipse 90% 60% at 50% -10%, rgba(0, 122, 216, 0.4), transparent 75%), linear-gradient(180deg, #051426 0%, #030810 100%);
+  --room-accent: #007AD8;
+  --room-accent-secondary: #7EC3F7;
+  --room-text: #FFFFFF;
+  --room-glow: rgba(0, 122, 216, 0.4);
+  --room-border: rgba(0, 122, 216, 0.45);
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Archivo Variable', Archivo, sans-serif;
+}
+
+/* Glass card styling */
+.glass-panel {
+  background: rgba(14, 16, 26, 0.78);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.55);
+}
+
+.glass-panel:hover {
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+/* Fluid display utilities */
+.font-display {
+  font-family: 'Anton', Impact, sans-serif;
+  letter-spacing: 0.01em;
+  line-height: 0.9;
+}
+
+.text-display {
+  font-size: var(--type-display);
+  overflow-wrap: anywhere;
+}
+
+.text-page-title {
+  font-size: var(--type-page-title);
+  overflow-wrap: anywhere;
+}
+
+.text-section-title {
+  font-size: var(--type-section);
+  overflow-wrap: anywhere;
+}
+
+.text-subhead {
+  font-size: var(--type-subhead);
+  overflow-wrap: anywhere;
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

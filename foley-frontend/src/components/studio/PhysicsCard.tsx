@@ -1,8 +1,8 @@
 import React from 'react';
 import { Slider } from '../ui/Slider';
 import { Select } from '../ui/Select';
-import { StudioSettings } from '../../hooks/useStudio';
-import { RoomName, WallMaterial, TweakResponse } from '../../api/types';
+import { StudioSettings } from '../config/hooks/useStudio';
+import { RoomName, WallMaterial, TweakResponse } from '../../types';
 import { computeLocalRT60 } from '../../lib/rooms';
 
 export interface PhysicsCardProps {

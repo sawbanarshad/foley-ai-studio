@@ -1,5 +1,5 @@
 import React from 'react';
-import { TEAM_NAME, GITHUB_URL, EVENT_NAME } from '../../config/site';
+import { TEAM_NAME, GITHUB_URL, EVENT_NAME } from '../config/site';
 
 export const SiteFooter: React.FC = () => {
     return (

@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
-import { Peak } from '../../api/types';
-import { PlaybackMode } from '../../hooks/useStudio';
+import { Peak } from '../../types';
+import { PlaybackMode } from '../config/hooks/useStudio';
 import { formatFrameTime } from '../../lib/format';
 
 export interface WaveformProps {

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Button } from '../ui/Button';
 import { Badge } from '../ui/Badge';
 import { TextLink } from '../ui/TextLink';
-import { Health } from '../../api/types';
+import { Health } from '../../types';
 import { formatFileSize } from '../../lib/format';
 
 export interface UploadCardProps {

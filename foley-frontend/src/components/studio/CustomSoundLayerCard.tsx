@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button } from '../ui/Button';
 import { Slider } from '../ui/Slider';
 import { Badge } from '../ui/Badge';
-import { SoundLayer, addCustomSound } from '../../api/client';
+import { SoundLayer, addCustomSound } from '../../client';
 
 export interface CustomSoundLayerCardProps {
     sessionId: string | null;

@@ -49,7 +49,8 @@ from vision_tracker import (
     extract_5_keyframes_and_recognize,
     call_gemini_analysis,
     compute_environment_physics,
-    track_motion_and_sync
+    track_motion_and_sync,
+    offline_fallback_analysis
 )
 from audio_generator import (
     generate_audio_clip,
@@ -395,12 +396,15 @@ def analyze_video(file: UploadFile = File(...)):
                 "gemini_info": gemini_info
             })
         except Exception as ge:
-            # ZERO SILENT FALLBACK - Report exact error
             logger.error(f"[Gemini API Error in /api/analyze-video]: {str(ge)}")
-            raise HTTPException(
-                status_code=502,
-                detail=f"Gemini Vision Recognition Failed: {str(ge)}. Please configure a valid GEMINI_API_KEY in .env."
-            )
+            motion_probe, _ = track_motion_and_sync(trimmed_path, [], fps, duration)
+            raw_env, raw_events = offline_fallback_analysis(motion_probe, fps, duration)
+            gemini_info = {
+                "detected_scene": "Offline vision fallback",
+                "gemini_error": str(ge),
+                "fallback": True
+            }
+            analysis_source = "offline_fallback"
 
     env_model = compute_environment_physics(raw_env)
     motion_curve, events_models = track_motion_and_sync(trimmed_path, raw_events, fps, duration)
