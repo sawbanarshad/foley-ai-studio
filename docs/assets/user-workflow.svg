@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title description">
+  <title id="title">Foley AI Studio user workflow</title>
+  <desc id="description">A five-stage workflow for uploading, analyzing, shaping, comparing, and refining synchronized Foley audio.</desc>
+  <defs>
+    <linearGradient id="hero" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f4ff"/>
+      <stop offset=".55" stop-color="#eef9ff"/>
+      <stop offset="1" stop-color="#fff4ef"/>
+    </linearGradient>
+    <linearGradient id="violet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7551d9"/>
+      <stop offset="1" stop-color="#a84fd4"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#316fd6"/>
+      <stop offset="1" stop-color="#5bb6dc"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0c9aa9"/>
+      <stop offset="1" stop-color="#55cdbd"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e66a32"/>
+      <stop offset="1" stop-color="#f2aa4b"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#27324d" flood-opacity=".12"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="7" flood-color="#27324d" flood-opacity=".08"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10Z" fill="#98a3b9"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" rx="28" fill="url(#hero)"/>
+  <g opacity=".4" stroke="#d2dae8" stroke-width="1">
+    <path d="M0 170H1600M0 340H1600M0 510H1600M0 680H1600M0 850H1600"/>
+    <path d="M200 0V900M400 0V900M600 0V900M800 0V900M1000 0V900M1200 0V900M1400 0V900"/>
+  </g>
+
+  <rect x="54" y="42" width="1492" height="92" rx="22" fill="#fff" opacity=".82" filter="url(#soft)"/>
+  <text x="800" y="82" text-anchor="middle" fill="#182038" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="800">
+    From Silent Clip to Production-Ready Foley
+  </text>
+  <text x="800" y="116" text-anchor="middle" fill="#68728a" font-family="Arial, Helvetica, sans-serif" font-size="20">
+    A live five-step workflow built for creative control, physical accuracy, and instant comparison
+  </text>
+
+  <g filter="url(#shadow)">
+    <rect x="54" y="176" width="266" height="438" rx="24" fill="#fff" stroke="#9d83dc" stroke-width="2"/>
+    <rect x="340" y="176" width="266" height="438" rx="24" fill="#fff" stroke="#88a8df" stroke-width="2"/>
+    <rect x="626" y="176" width="266" height="438" rx="24" fill="#fff" stroke="#73bbb3" stroke-width="2"/>
+    <rect x="912" y="176" width="266" height="438" rx="24" fill="#fff" stroke="#e7ad69" stroke-width="2"/>
+    <rect x="1198" y="176" width="348" height="438" rx="24" fill="#fff" stroke="#dc8c66" stroke-width="2"/>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <circle cx="187" cy="220" r="30" fill="url(#violet)"/>
+    <text x="187" y="231" fill="#fff" font-size="25" font-weight="800">1</text>
+    <text x="187" y="284" fill="#20294a" font-size="21" font-weight="800">UPLOAD</text>
+    <text x="187" y="308" fill="#7b8497" font-size="15">Bring the scene</text>
+
+    <circle cx="473" cy="220" r="30" fill="url(#blue)"/>
+    <text x="473" y="231" fill="#fff" font-size="25" font-weight="800">2</text>
+    <text x="473" y="284" fill="#20294a" font-size="21" font-weight="800">ANALYZE</text>
+    <text x="473" y="308" fill="#7b8497" font-size="15">Understand the action</text>
+
+    <circle cx="759" cy="220" r="30" fill="url(#cyan)"/>
+    <text x="759" y="231" fill="#fff" font-size="25" font-weight="800">3</text>
+    <text x="759" y="284" fill="#20294a" font-size="21" font-weight="800">SHAPE</text>
+    <text x="759" y="308" fill="#7b8497" font-size="15">Control the physics</text>
+
+    <circle cx="1045" cy="220" r="30" fill="url(#orange)"/>
+    <text x="1045" y="231" fill="#fff" font-size="25" font-weight="800">4</text>
+    <text x="1045" y="284" fill="#20294a" font-size="21" font-weight="800">GENERATE</text>
+    <text x="1045" y="308" fill="#7b8497" font-size="15">Create the timeline</text>
+
+    <circle cx="1372" cy="220" r="30" fill="#d86e52"/>
+    <text x="1372" y="231" fill="#fff" font-size="25" font-weight="800">5</text>
+    <text x="1372" y="284" fill="#20294a" font-size="21" font-weight="800">COMPARE &amp; REFINE</text>
+    <text x="1372" y="308" fill="#7b8497" font-size="15">Listen, prompt, and export</text>
+  </g>
+
+  <g fill="none" stroke="#98a3b9" stroke-width="5" marker-end="url(#arrow)">
+    <path d="M320 395H340"/>
+    <path d="M606 395H626"/>
+    <path d="M892 395H912"/>
+    <path d="M1178 395H1198"/>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-size="16" text-anchor="middle">
+    <g>
+      <rect x="91" y="344" width="192" height="68" rx="13" fill="#f7f4ff" stroke="#ded5f4"/>
+      <text x="187" y="372" fill="#303755" font-weight="700">Silent MP4, MOV</text>
+      <text x="187" y="394" fill="#303755">or WebM</text>
+      <rect x="91" y="426" width="192" height="68" rx="13" fill="#fff" stroke="#ded5f4"/>
+      <text x="187" y="454" fill="#303755" font-weight="700">Preview the clip</text>
+      <text x="187" y="476" fill="#303755">before synthesis</text>
+      <rect x="91" y="508" width="192" height="58" rx="13" fill="url(#violet)"/>
+      <text x="187" y="543" fill="#fff" font-weight="800">ANALYZE CLIP</text>
+    </g>
+    <g>
+      <rect x="377" y="344" width="192" height="68" rx="13" fill="#f1f6ff" stroke="#d1def3"/>
+      <text x="473" y="372" fill="#303755" font-weight="700">Gemini sees scene</text>
+      <text x="473" y="394" fill="#303755">and sound intent</text>
+      <rect x="377" y="426" width="192" height="68" rx="13" fill="#fff" stroke="#d1def3"/>
+      <text x="473" y="454" fill="#303755" font-weight="700">OpenCV finds motion</text>
+      <text x="473" y="476" fill="#303755">peaks, pan &amp; strength</text>
+      <rect x="377" y="508" width="192" height="58" rx="13" fill="url(#blue)"/>
+      <text x="473" y="543" fill="#fff" font-weight="800">INSPECT EVENTS</text>
+    </g>
+    <g>
+      <rect x="663" y="344" width="192" height="68" rx="13" fill="#effaf8" stroke="#cbebe5"/>
+      <text x="759" y="372" fill="#303755" font-weight="700">Set room &amp; material</text>
+      <text x="759" y="394" fill="#303755">and impact energy</text>
+      <rect x="663" y="426" width="192" height="68" rx="13" fill="#fff" stroke="#cbebe5"/>
+      <text x="759" y="454" fill="#303755" font-weight="700">Nudge exact frames</text>
+      <text x="759" y="476" fill="#303755">for perfect contact</text>
+      <rect x="663" y="508" width="192" height="58" rx="13" fill="url(#cyan)"/>
+      <text x="759" y="543" fill="#fff" font-weight="800">APPLY DSP</text>
+    </g>
+    <g>
+      <rect x="949" y="344" width="192" height="68" rx="13" fill="#fff8ef" stroke="#f1d8bc"/>
+      <text x="1045" y="372" fill="#303755" font-weight="700">Retrieve real audio</text>
+      <text x="1045" y="394" fill="#303755">or generate effects</text>
+      <rect x="949" y="426" width="192" height="68" rx="13" fill="#fff" stroke="#f1d8bc"/>
+      <text x="1045" y="454" fill="#303755" font-weight="700">Place hits on frame</text>
+      <text x="1045" y="476" fill="#303755">and render stereo mix</text>
+      <rect x="949" y="508" width="192" height="58" rx="13" fill="url(#orange)"/>
+      <text x="1045" y="543" fill="#fff" font-weight="800">GENERATE FOLEY</text>
+    </g>
+    <g>
+      <rect x="1241" y="344" width="262" height="68" rx="13" fill="#fff6f2" stroke="#efd1c5"/>
+      <text x="1372" y="372" fill="#303755" font-weight="700">Silent / naive / synced</text>
+      <text x="1372" y="394" fill="#303755">playback modes</text>
+      <rect x="1241" y="426" width="262" height="68" rx="13" fill="#fff" stroke="#efd1c5"/>
+      <text x="1372" y="454" fill="#303755" font-weight="700">Prompt: “add distant rain”</text>
+      <text x="1372" y="476" fill="#303755">or “make impact heavier”</text>
+      <rect x="1241" y="508" width="262" height="58" rx="13" fill="#d86e52"/>
+      <text x="1372" y="543" fill="#fff" font-weight="800">EXPORT MP4 • WAV</text>
+    </g>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="54" y="650" width="1492" height="206" rx="24" fill="#fff" stroke="#dde3ee" stroke-width="2"/>
+  </g>
+  <text x="800" y="692" text-anchor="middle" fill="#20294a" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="800">
+    The refinement loop turns a first render into your best sound
+  </text>
+
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <g>
+      <rect x="98" y="724" width="226" height="82" rx="16" fill="#f7f4ff" stroke="#ded5f4"/>
+      <text x="211" y="756" fill="#7551d9" font-size="15" font-weight="800">LISTEN</text>
+      <text x="211" y="781" fill="#303755" font-size="16">Compare three playback modes</text>
+    </g>
+    <path d="M324 765H390" fill="none" stroke="#98a3b9" stroke-width="4" marker-end="url(#arrow)"/>
+    <g>
+      <rect x="390" y="724" width="226" height="82" rx="16" fill="#eff6ff" stroke="#d1def3"/>
+      <text x="503" y="756" fill="#316fd6" font-size="15" font-weight="800">PROMPT</text>
+      <text x="503" y="781" fill="#303755" font-size="16">Describe the better sound</text>
+    </g>
+    <path d="M616 765H682" fill="none" stroke="#98a3b9" stroke-width="4" marker-end="url(#arrow)"/>
+    <g>
+      <rect x="682" y="724" width="236" height="82" rx="16" fill="#effaf8" stroke="#cbebe5"/>
+      <text x="800" y="756" fill="#0c9aa9" font-size="15" font-weight="800">RENDER</text>
+      <text x="800" y="781" fill="#303755" font-size="16">Add or regenerate real audio</text>
+    </g>
+    <path d="M918 765H984" fill="none" stroke="#98a3b9" stroke-width="4" marker-end="url(#arrow)"/>
+    <g>
+      <rect x="984" y="724" width="236" height="82" rx="16" fill="#fff8ef" stroke="#f1d8bc"/>
+      <text x="1102" y="756" fill="#dc7a39" font-size="15" font-weight="800">COMPARE</text>
+      <text x="1102" y="781" fill="#303755" font-size="16">Verify improvement instantly</text>
+    </g>
+    <path d="M1220 765H1286" fill="none" stroke="#98a3b9" stroke-width="4" marker-end="url(#arrow)"/>
+    <g>
+      <rect x="1286" y="724" width="216" height="82" rx="16" fill="#fff6f2" stroke="#efd1c5"/>
+      <text x="1394" y="756" fill="#d86e52" font-size="15" font-weight="800">EXPORT</text>
+      <text x="1394" y="781" fill="#303755" font-size="16">Download the final cut</text>
+    </g>
+  </g>
+</svg>

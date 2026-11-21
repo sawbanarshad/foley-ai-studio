@@ -50,15 +50,15 @@ export const CustomSoundLayerCard: React.FC<CustomSoundLayerCardProps> = ({
             {/* Header */}
             <div className="flex items-center justify-between">
                 <h3 className="font-display text-xl uppercase tracking-wider">
-                    04 // CUSTOM SOUND LAYERING
+                    04 // PROMPT REFINEMENT
                 </h3>
                 <span className="text-[10px] font-action text-white/50 uppercase">
-                    REAL FOLEY OVERLAY
+                    ADD TO THE BEST TAKE
                 </span>
             </div>
 
             <p className="text-[12px] font-body text-white/70">
-                Overlay custom real-world sounds (e.g. "heavy thunder crash", "footsteps on dry leaves", "wind chimes") on top of the video without erasing existing background audio.
+                After generating your first render, prompt for a better mix: add distant rain, heavier impacts, footsteps on dry leaves, or softer room ambience without replacing the existing Foley track.
             </p>
 
             {/* Error alert */}
@@ -79,7 +79,7 @@ export const CustomSoundLayerCard: React.FC<CustomSoundLayerCardProps> = ({
                         value={prompt}
                         disabled={disabled || isLoading || !sessionId}
                         onChange={(e) => setPrompt(e.target.value)}
-                        placeholder='e.g. "add distant rolling thunder and rain on leaves"'
+                        placeholder='e.g. "make the impact heavier and add distant rolling thunder"'
                         className="w-full bg-[#090B14] border border-white/20 rounded px-3 py-2 text-sm text-white placeholder-white/30 focus:outline-none focus:border-purple-400"
                         onKeyDown={(e) => {
                             if (e.key === 'Enter' && prompt.trim()) {
@@ -125,7 +125,7 @@ export const CustomSoundLayerCard: React.FC<CustomSoundLayerCardProps> = ({
                 onClick={handleAddSound}
                 className="w-full"
             >
-                {isLoading ? 'GENERATING REAL SOUND LAYER…' : 'ADD SOUND LAYER'}
+                {isLoading ? 'RENDERING REFINEMENT…' : 'ADD PROMPT REFINEMENT'}
             </Button>
 
             {/* Active Audio Layers List */}

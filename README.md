@@ -57,6 +57,10 @@ This project does not drop generic stock clips onto a rough timestamp and stop t
 
 ## Product Walkthrough
 
+![Foley AI Studio user workflow](docs/assets/user-workflow.svg)
+
+*From upload to export, every step exposes the AI, vision, physics, and comparison features judges can evaluate live.*
+
 ### 1. Upload and analyze
 
 - Accepts MP4, MOV, or WebM uploads.
@@ -98,7 +102,7 @@ The backend performs a 48 kHz real-audio assembly:
 9. Assemble the synchronized track and naive baseline.
 10. Mux both tracks to MP4 and export the synchronized WAV.
 
-### 4. Compare and export
+### 4. Compare, prompt, and refine
 
 The master stage provides three playback modes:
 
@@ -106,7 +110,14 @@ The master stage provides three playback modes:
 - **Naive** timeline-baseline audio
 - **Physics-synced** frame-aligned output
 
-Users can also seek the waveform, view detected peaks, download the synced MP4, and download the WAV.
+After the first render, users can continue the creative loop without restarting:
+
+- Prompt for more atmosphere, detail, or realism, such as **“add distant rolling thunder”**.
+- Prompt for a stronger impact, softer surface, different material character, or a cleaner mix.
+- Add custom real audio layers with an independent start time and volume.
+- Preserve the synchronized base mix while stacking each new prompt as a separate layer.
+- Revisit event prompts and physics controls, regenerate, and compare the improvement immediately.
+- Seek the waveform, inspect detected peaks, download the synced MP4, and download the WAV.
 
 ## System Architecture
 
